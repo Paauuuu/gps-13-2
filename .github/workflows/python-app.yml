@@ -41,4 +41,8 @@ jobs:
         
     - name: Run Coverage
       run: |
-        coverage report -m pytest practica-gps-ci-master/test.py
+        coverage run -m pytest practica-gps-ci-master/test.py
+        
+    - name: Coverage Report
+      run: |
+        coverage report -m
